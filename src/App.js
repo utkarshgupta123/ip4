@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import Useref from './components/useRef';
 import './App.css';
+import Questions from "./components/Questions";
+// import LifeCycleMethods from './Components/lifecycle';
+import React from 'react';
+import Lifecycle1 from './components/LifeCycle1';
+import UseMemo from './components/useMemo';
 
-function App() {
+
+
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+       <>
+    <center>
+    <Useref/>
+     <Questions/>
+     <UseMemo/>
+     <Lifecycle1/>
+     
+    </center>
+     </>
     </div>
-  );
+  )
 }
+
 
 export default App;
